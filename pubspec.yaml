@@ -1,0 +1,87 @@
+name: urban_tanker_vendor_app
+description: Urban Tanker Vendor Mobile App - Manage Orders, Fleet & Inventory
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Firebase Suite (15 packages)
+  firebase_core: ^2.17.0
+  firebase_auth: ^4.10.0
+  firebase_analytics: ^10.0.0
+  cloud_firestore: ^4.13.0
+  firebase_messaging: ^14.6.0
+  firebase_storage: ^11.2.0
+  
+  # State Management
+  provider: ^6.0.0
+  
+  # Networking & WebSocket
+  http: ^1.1.0
+  web_socket_channel: ^2.4.0
+  stream_transform: ^2.1.0
+  
+  # Location & Permissions
+  geolocator: ^9.0.2
+  permission_handler: ^11.4.0
+  
+  # Local Notifications
+  flutter_local_notifications: ^14.1.0
+  timezone: ^0.9.2
+  
+  # Storage & Preferences
+  shared_preferences: ^2.2.0
+  flutter_secure_storage: ^9.0.0
+  sqflite: ^2.3.0
+  path: ^1.8.3
+
+  # Biometrics & Security
+  local_auth: ^2.1.6
+  crypto: ^3.0.3
+  
+  # UI & Design
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.0
+  cached_network_image: ^3.3.0
+  
+  # Date & Time
+  intl: ^0.19.0
+  
+  # Utilities
+  uuid: ^4.0.0
+  dio: ^5.3.0
+  connectivity_plus: ^5.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+  
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-ExtraBold.ttf
+          weight: 800
